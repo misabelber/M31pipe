@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<source_library title="source library">
+  <source name="3FGL J0023.5+4454" type="PointSource">
+    <spectrum type="FileFunction" file="../spectra/spec_J0023.5+4454_ebl.dat">
+      <parameter name="Normalization" value="1" error="0" scale="1" min="0" max="1000" free="1" />
+    </spectrum>
+    <spatialModel type="SkyDirFunction">
+      <parameter name="RA" value="5.8781" scale="1" min="-360" max="360" free="0" />
+      <parameter name="DEC" value="44.9055" scale="1" min="-90" max="90" free="0" />
+    </spatialModel>
+  </source>
+  <source name="3FGL J0032.5+3912" type="PointSource">
+    <spectrum type="FileFunction" file="../spectra/spec_J0032.5+3912_ebl.dat">
+      <parameter name="Normalization" value="1" error="0" scale="1" min="0" max="1000" free="1" />
+    </spectrum>
+    <spatialModel type="SkyDirFunction">
+      <parameter name="RA" value="8.1464" scale="1" min="-360" max="360" free="0" />
+      <parameter name="DEC" value="39.2131" scale="1" min="-90" max="90" free="0" />
+    </spatialModel>
+  </source>
+  <source name="3FGL J0041.9+3639" type="PointSource">
+    <spectrum type="FileFunction" file="../spectra/spec_J0041.9+3639_ebl.dat">
+      <parameter name="Normalization" value="1" error="0" scale="1" min="0" max="1000" free="1" />
+    </spectrum>
+    <spatialModel type="SkyDirFunction">
+      <parameter name="RA" value="10.4998" scale="1" min="-360" max="360" free="0" />
+      <parameter name="DEC" value="36.6616" scale="1" min="-90" max="90" free="0" />
+    </spatialModel>
+  </source>
+  <source name="3FGL J0102.1+4458" type="PointSource">
+    <spectrum type="FileFunction" file="../spectra/spec_J0102.1+4458_ebl.dat">
+      <parameter name="Normalization" value="1" error="0" scale="1" min="0" max="1000" free="1" />
+    </spectrum>
+    <spatialModel type="SkyDirFunction">
+      <parameter name="RA" value="15.5367" scale="1" min="-360" max="360" free="0" />
+      <parameter name="DEC" value="44.9718" scale="1" min="-90" max="90" free="0" />
+    </spatialModel>
+  </source>
+  <source name="3FGL J0102.3+4217" type="PointSource">
+    <spectrum type="FileFunction" file="../spectra/spec_J0102.3+4217_ebl.dat">
+      <parameter name="Normalization" value="1" error="0" scale="1" min="0" max="1000" free="1" />
+    </spectrum>
+    <spatialModel type="SkyDirFunction">
+      <parameter name="RA" value="15.5946" scale="1" min="-360" max="360" free="0" />
+      <parameter name="DEC" value="42.2888" scale="1" min="-90" max="90" free="0" />
+    </spatialModel>
+  </source>
+  <source name="3FGL J0105.3+3928" type="PointSource">
+    <spectrum type="FileFunction" file="../spectra/spec_J0105.3+3928_ebl.dat">
+      <parameter name="Normalization" value="1" error="0" scale="1" min="0" max="1000" free="1" />
+    </spectrum>
+    <spatialModel type="SkyDirFunction">
+      <parameter name="RA" value="16.3305" scale="1" min="-360" max="360" free="0" />
+      <parameter name="DEC" value="39.4725" scale="1" min="-90" max="90" free="0" />
+    </spatialModel>
+  </source>
+  <source name="3FHL J0039.2+4330" type="PointSource">
+    <spectrum type="FileFunction" file="../spectra/spec_J0039.2+4330_ebl.dat">
+      <parameter name="Normalization" value="1" error="0" scale="1" min="0" max="1000" free="1" />
+    </spectrum>
+    <spatialModel type="SkyDirFunction">
+      <parameter name="RA" value="9.814182855" scale="1" min="-360" max="360" free="0" />
+      <parameter name="DEC" value="43.50697257" scale="1" min="-90" max="90" free="0" />
+    </spatialModel>
+  </source>
+  <source name="3FHL J0040.3+4049" type="PointSource">
+    <spectrum type="FileFunction" file="../spectra/spec_J0040.3+4049_ebl.dat">
+      <parameter name="Normalization" value="1" error="0" scale="1" min="0" max="1000" free="1" />
+    </spectrum>
+    <spatialModel type="SkyDirFunction">
+      <parameter name="RA" value="10.0869731" scale="1" min="-360" max="360" free="0" />
+      <parameter name="DEC" value="40.82543806" scale="1" min="-90" max="90" free="0" />
+    </spatialModel>
+  </source>
+  <source name="3FHL J0041.5+3759" type="PointSource">
+    <spectrum type="FileFunction" file="../spectra/spec_J0041.5+3759_ebl.dat">
+      <parameter name="Normalization" value="1" error="0" scale="1" min="0" max="1000" free="1" />
+    </spectrum>
+    <spatialModel type="SkyDirFunction">
+      <parameter name="RA" value="10.37653068" scale="1" min="-360" max="360" free="0" />
+      <parameter name="DEC" value="37.99573071" scale="1" min="-90" max="90" free="0" />
+    </spatialModel>
+  </source>
+  <source name="3FHL J0047.9+3947" type="PointSource">
+    <spectrum type="FileFunction" file="../spectra/spec_J0047.9+3947_ebl.dat">
+      <parameter name="Normalization" value="1" error="0" scale="1" min="0" max="1000" free="1" />
+    </spectrum>
+    <spatialModel type="SkyDirFunction">
+      <parameter name="RA" value="11.97659042" scale="1" min="-360" max="360" free="0" />
+      <parameter name="DEC" value="39.78961386" scale="1" min="-90" max="90" free="0" />
+    </spatialModel>
+  </source>
+  <source name="3FHL J0049.0+4224" type="PointSource">
+    <spectrum type="FileFunction" file="../spectra/spec_J0049.0+4224_ebl.dat">
+      <parameter name="Normalization" value="1" error="0" scale="1" min="0" max="1000" free="1" />
+    </spectrum>
+    <spatialModel type="SkyDirFunction">
+      <parameter name="RA" value="12.27132782" scale="1" min="-360" max="360" free="0" />
+      <parameter name="DEC" value="42.4033062" scale="1" min="-90" max="90" free="0" />
+    </spatialModel>
+  </source>
+  <source name="3FHL J0055.8+4507" type="PointSource">
+    <spectrum type="FileFunction" file="../spectra/spec_J0055.8+4507_ebl.dat">
+      <parameter name="Normalization" value="1" error="0" scale="1" min="0" max="1000" free="1" />
+    </spectrum>
+    <spatialModel type="SkyDirFunction">
+      <parameter name="RA" value="13.95327737" scale="1" min="-360" max="360" free="0" />
+      <parameter name="DEC" value="45.12626494" scale="1" min="-90" max="90" free="0" />
+    </spatialModel>
+  </source>
+  <source name="3FHL J0110.9+4346" type="PointSource">
+    <spectrum type="FileFunction" file="../spectra/spec_J0110.9+4346_ebl.dat">
+      <parameter name="Normalization" value="1" error="0" scale="1" min="0" max="1000" free="1" />
+    </spectrum>
+    <spatialModel type="SkyDirFunction">
+      <parameter name="RA" value="17.73535053" scale="1" min="-360" max="360" free="0" />
+      <parameter name="DEC" value="43.78166792" scale="1" min="-90" max="90" free="0" />
+    </spatialModel>
+  </source>
+  <source Energy_Flux100="3.67363227726e-06" Flux1000="3.69672096459e-10" Flux_Density="2.40900295948e-12" Npred="866.752710191" Pivot_Energy="572.780460457" PowerLaw_Index="2.56232771799" Spectral_Index="-2.56232771799" TSCurve="3.5111172371" TS_value="44.3280032137" Unc_Energy_Flux100="5.38802575233e-07" Unc_Flux1000="7.33361153104e-11" Unc_Flux_Density="3.52061487116e-13" Unc_Spectral_Index="0.112476618827" Variability_Index="0.0" name="3FGL J0042.5+4117" type="PointSource" tscalc="1">
+    <spectrum normPar="Prefactor" type="PowerLaw">
+      <parameter error="0.2080714033" free="1" max="100000" min="1e-05" name="Prefactor" scale="1e-12" value="1.405452115"/>
+      <parameter error="0.1124766188" free="1" max="5" min="0" name="Index" scale="-1" value="2.562327718"/>
+      <parameter free="0" max="706.8377118" min="517.7455776" name="Scale" scale="1" value="706.8377118"/>
+    </spectrum>
+    <spatialModel type="SkyDirFunction">
+      <parameter free="0" max="360" min="-360" name="RA" scale="1" value="10.6293"/>
+      <parameter free="0" max="90" min="-90" name="DEC" scale="1" value="41.2957"/>
+    </spatialModel>
+  </source>
+  <source name="BackgroundModel" type="CTACubeBackground" instrument="CTA,HESS,MAGIC,VERITAS">
+    <spectrum type="PowerLaw">
+      <parameter name="Prefactor" value="1" error="0" scale="1" min="0.01" max="100" free="1" />
+      <parameter name="Index" value="0" error="0" scale="1" min="-5" max="5" free="1" />
+      <parameter name="PivotEnergy" value="1" scale="1000000" free="0" />
+    </spectrum>
+  </source>
+</source_library>
