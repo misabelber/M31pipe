@@ -56,7 +56,7 @@ irf = "irf_file.fits"
 caldb_= "1dc"
 irf_="North_z20_50h"
 
-particle = 'Mu' #Final state particle
+particle = 'Tau' #Final state particle
 #masses = [0]
 #masses = [0.100,0.200,0.500,1,5,10,50,100]
 masses = [0.100,0.200,0.300,0.400,0.500,0.600,0.800,1,4,5,8,10,40,50,80,100]

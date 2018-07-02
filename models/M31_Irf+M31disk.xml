@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<source_library title="Source Library">
+  <source Energy_Flux100="3.67363227726e-06" Flux1000="3.69672096459e-10" Flux_Density="2.40900295948e-12" Npred="866.752710191" Pivot_Energy="572.78060457" PowerLaw_Index="2.56232771799" Spectral_Index="-2.56232771799" TSCurve="3.5111172371" TS_value="44.3280032137" Unc_Energy_Flux100="5.38802575233e-07" Unc_Flux1000="7.33361153104e-11" Unc_Flux_Density="3.52061487116e-13" Unc_Spectral_Index="0.112476618827" Variability_Index="0.0" name="3FGL J0042.5+4117" type="PointSource" tscalc="1">
+    <spectrum normPar="Prefactor" type="PowerLaw">
+      <parameter error="0.2080714033" free="1" max="100000" min="1e-05" name="Prefactor" scale="1e-12" value="1.405452115"/>
+      <parameter error="0.1124766188" free="1" max="5" min="0" name="Index" scale="-1" value="2.562327718"/>
+      <parameter free="0" max="706.8377118" min="517.7455776" name="Scale" scale="1" value="706.8377118"/>
+    </spectrum>
+    <spatialModel type="RadialDisk">
+      <parameter name="RA" value="10.76" error="0" scale="1" min="-360" max="360" free="1" />
+      <parameter name="DEC" value="41.19" error="0" scale="1" min="-90" max="90" free="1" />
+      <parameter name="Radius" value="0.38" error="0" scale="1" min="0.01" max="10" free="1" />
+    </spatialModel>
+  </source>
+  <source name="CTABackgroundModel" type="CTAIrfBackground" instrument="CTA">
+    <spectrum type="PowerLaw">
+      <parameter name="Prefactor"   scale="1"  value="1"  min="0.001" max="1000"   free="1"/>
+      <parameter name="Index"   scale="1"  value="0"  min="-5" max="5"   free="1"/>
+      <parameter name="PivotEnergy"   scale="1000000"  value="1"  min="0.01" max="1000"   free="0"/>
+    </spectrum>
+  </source>
+</source_library>

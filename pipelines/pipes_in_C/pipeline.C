@@ -101,16 +101,16 @@ void CheckJFACTOR()
 {
   Init(20,20,20,2,0);
   
-  TString extended[N_ext] = {"Irf","M31point"};
+  TString extended[N_ext] = {"Irf","M31disk"};
   TString point[N_ps];
   TString suf = "_";
   TString suf_DM = "_jfactorNFW";
 
   TString DMtypes[1] = {"_jfactorNFW"};
   Number DMmasses[8] = {0.100,0.200,0.500,1,5,10,50,100};
-  TString DMparticles[4] = {"b"};
+  TString DMparticles[4] = {"W"};
 
-  Number steps[Nbar+1]={10,0.001,0.001};
+  Number steps[Nbar+1]={10,0.001,0.1};
   
   FillContainer_Bkg(extended,point,suf);
   FillContainer_Obs("Irf+M31point",true,suf);
@@ -119,8 +119,8 @@ void CheckJFACTOR()
     {
       for (int ntype=0; ntype<1; ntype++)
 	{
-	  TString filenamelim = "/home/queenmab/GitHub/M31pipe/results/Limits"+DMparticles[npart]+DMtypes[ntype];
-	  TString filenamecfact = "/home/queenmab/GitHub/M31pipe/results/Cfactors"+DMparticles[npart]+DMtypes[ntype];
+	  TString filenamelim = "/home/queenmab/GitHub/M31pipe/results/Limits"+DMparticles[npart]+DMtypes[ntype]+"_Disk";
+	  TString filenamecfact = "/home/queenmab/GitHub/M31pipe/results/Cfactors"+DMparticles[npart]+DMtypes[ntype]+"_Disk";
 	  ofstream outfilelim;
 	  ofstream outfilecfact;
 	  outfilelim.open(filenamelim,ios::app);
@@ -144,7 +144,7 @@ void CheckJFACTOR()
 	      cout << "Upper Limit: " << UpperLimit << endl;
 	      cout << endl;
 	      outfilelim << DMmasses[nmass] << "  " << UpperLimit << endl;
-	      Number intervals[Nbar+1] = {UpperLimit,0.00025,5};
+	      Number intervals[Nbar+1] = {UpperLimit,0.00025,3};
 	      V Cfactors;
 	      cout << "Calculating Correlation Factors..." << endl;
 	      calc_CorrFactors(Kpars,intervals,Cfactors);

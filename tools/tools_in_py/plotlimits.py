@@ -30,23 +30,21 @@ def plot_Limits(filename,case,thermal):
 # ======================== #
 if __name__ == '__main__':
     # Filepath to results
-    particle="Mu"
-    path = "/home/queenmab/GitHub/LMC/results/"
-    filename         =["Limits"+particle+"_jfactorNFW",
-                       "Limits"+particle+"_jfactorgamma0.5",
-                       "Limits"+particle+"_jfactorgamma1.5"]
+    particle="b"
+    path = "/home/queenmab/GitHub/M31pipe/results/"
+    filename         =["Limits"+particle+"_jfactorNFW","Limits"+particle+"_jfactorNFW_Disk"]
+                       
     
-    case             =["NFW","$\Gamma=0.5$","$\Gamma=1.5$"]
+    case             =["M31 Point","M31 Disk"]
     # Call plot function
     plot_Limits(path+filename[0],case[0],True)
     plot_Limits(path+filename[1],case[1],False)
-    plot_Limits(path+filename[2],case[2],False)
     plt.xscale('log')
     plt.yscale('log')
     plt.xlabel('Mass (TeV)')
     plt.ylabel('$<\sigma v> cm^{3}s^{-1}$')
-    plt.title("$\mu\overline{\mu}$ annihilation channel")
-    
+    plt.title("$b\overline{b}$ annihilation channel")
+#    plt.title("$W^{+}W^{-}$ annihilation channel")
     plt.legend()
 
 

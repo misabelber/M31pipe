@@ -638,18 +638,20 @@ Number Upper_Minimizer(V &Kpars,
   Number maxlogL = logL(Kpars,0,nebins);
   gRandom          -> SetSeed(0);
   V K_0             = Kpars;
-  int niter         = 300;
+  int niter         = 600;
   int trials        = 50;
   V x               = Kpars;
-  Number dm_step    = 50;
-  Number irf_step   = 0.001;
-  Number comp_step  = 0.001;
-
+  Number dm_step    = 300;
+  Number irf_step   = 0.005;
+  Number comp_step  = 2;
+  int maxtrials     = 20;
+  
   if (irf_step > tol) irf_step   = tol;
   if (comp_step > tol) comp_step = tol;
 
   Number Upperlimit = Kpars[0];
-
+  int counter=0;
+  int maxiter=0;
   if (test==true)
     {
       // Create difference.dat file
@@ -804,7 +806,7 @@ Number Upper_Minimizer(V &Kpars,
       for (int trial = 0; trial<trials; trial++)
         {
           x = K_0;
-          //for (int ii=1; ii<Nbar+1; ii++) x[ii] = K_0[ii];
+          maxiter=0;
           Number maxdiflog = fabs(2*(maxlogL-logL(x,0,nebins)))-2.71;
           for (int i=0; i<niter; i++)
             {
@@ -848,6 +850,7 @@ Number Upper_Minimizer(V &Kpars,
                       maxdiflog = difflog;
                       Kpars     = x;
                       Number loglike = logL(x,0,nebins);
+                      maxiter=0;
                       if (fabs(x[0]) > fabs(Upperlimit))
                         {
                           if (fabs(2*(maxlogL-loglike))>2.715 ||
@@ -859,6 +862,10 @@ Number Upper_Minimizer(V &Kpars,
                             {
                               Upperlimit = x[0];
                               Kpars      = x;
+                              cout << "Trial " << trial <<
+                                ": " << Upperlimit <<
+                                "  " << fabs(2*(maxlogL-loglike)) << endl;
+                              counter = 0;
                               continue;
                             }
                         }
@@ -872,7 +879,9 @@ Number Upper_Minimizer(V &Kpars,
                       x[j] = x[j]-step;
                     }
                 }
+              maxiter++;
             }
+          counter++; 
         }
     }
   // Kpars are normalized parameters of the minimum
